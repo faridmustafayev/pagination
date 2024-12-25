@@ -40,7 +40,7 @@ public enum UserMapper {
                 .toList();
 
         return PageableUserResponse.<UserResponse>builder()
-                .users(userResponses)
+                .content(userResponses)
                 .hasNextPage(userPage.hasNext())
                 .totalElements(userPage.getTotalElements())
                 .lastPageNumber(userPage.getTotalPages())
